@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Happy Birthday</string>
+    <string name="name">The baby\'s name</string>
+    <string name="birthday">Birthday</string>
+    <string name="please_add_the_baby_birthday">please add the baby birthday</string>
+    <string name="please_add_the_baby_picture">please add the baby picture</string>
+    <string name="show_birthday_screen">Show birthday screen</string>
+    <string name="today_name_is">Today %s is</string>
+    <string name="month_old">month old</string>
+    <string name="share_the_news">Share the news</string>
+
+</resources>

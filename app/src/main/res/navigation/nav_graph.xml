@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragFirst">
+
+    <fragment
+        android:id="@+id/fragFirst"
+        android:name="com.example.happybirthday.DetailsFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_fragFirst_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.happybirthday.BirthdayFragment"
+        android:label="SecondFragment" />
+</navigation>

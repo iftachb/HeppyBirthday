@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/ic_arrow_back_blue"   />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tvBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/today_name_is"
+            android:textSize="21sp"
+            android:textColor="@color/grey_text"
+            android:textAllCaps="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="13dp">
+
+            <ImageView
+                android:id="@+id/ivMonth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/ic_left_swirls"/>
+            <ImageView
+                android:id="@+id/ivMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp" />
+
+            <ImageView
+                android:id="@+id/ivMonth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/ic_right_swirls"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBirthdayIsOld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:text="@string/month_old"
+            android:textSize="21sp"
+            android:textColor="@color/grey_text"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/ivBackgroundSmile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <FrameLayout
+            android:layout_width="229dp"
+            android:layout_height="229dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp">
+
+
+            <ImageView
+                android:id="@+id/ivImageFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_frame_blue"
+                android:elevation="1dp" />
+
+
+            <ImageView
+                android:id="@+id/ivImageSmile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:background="@drawable/ic_default_place_holder_blue" />
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_camera_icon_blue"
+                android:elevation="1dp"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivLoge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginEnd="157dp"
+            android:background="@drawable/ic_nanit_logo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bShare"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="88dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:paddingTop="7dp"
+            app:cornerRadius="150dp"
+            android:backgroundTint="@color/red_button"
+            android:text="@string/share_the_news"
+            android:textSize="19sp"
+            android:drawableEnd="@drawable/ic_share_white_small"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</FrameLayout>
